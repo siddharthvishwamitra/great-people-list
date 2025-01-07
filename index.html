@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Great Peopl In History</title>
+</head>
+<body>
+<div class="container">
+<div class="image-grid">
+  <a href="https://example.com/link1">
+    <img src="/images/1.jpg" alt="Image 1">
+    <p>Vishwamitra</p>
+  </a>
+  <a href="https://example.com/link2">
+    <img src="/images/1.jpg" alt="Image 2">
+    <p>Bhishma</p>
+  </a>
+  <a href="https://example.com/link3">
+    <img src="/images/1.jpg" alt="Image 3">
+    <p>Confucius</p>
+  </a>
+  <a href="https://example.com/link4">
+    <img src="/images/1.jpg" alt="Image 4">
+    <p>Rumi</p>
+  </a>
+  <a href="https://example.com/link1">
+    <img src="/images/1.jpg" alt="Image 1">
+    <p>Parshuram</p>
+  </a>
+  <a href="https://example.com/link2">
+    <img src="/images/1.jpg" alt="Image 2">
+    <p>Veda Vyasa</p>
+  </a>
+  <a href="https://example.com/link3">
+    <img src="/images/1.jpg" alt="Image 3">
+    <p>Vivekananda</p>
+  </a>
+  <a href="https://example.com/link4">
+    <img src="/images/1.jpg" alt="Image 4">
+    <p>Lord Krishna</p>
+  </a>
+  <a href="https://example.com/link1">
+    <img src="/images/1.jpg" alt="Image 1">
+    <p>Guru Nanak</p>
+  </a>
+  <a href="https://example.com/link2">
+    <img src="/images/1.jpg" alt="Image 2">
+    <p>Shankaracharya</p>
+  </a>
+  <a href="https://example.com/link3">
+    <img src="/images/1.jpg" alt="Image 3">
+    <p>Lord Buddha</p>
+  </a>
+  <a href="https://example.com/link4">
+    <img src="/images/1.jpg" alt="Image 4">
+    <p>Lord Rama</p>
+  </a>
+</div>
+</div>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+  font-family: "Roboto Mono", serif;
+}
+body {
+  background-image: url('/images/bg1.gif');
+  background-repeat: repeat-x;
+  background-size: auto;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  justify-items: center;
+}
+
+.image-grid a {
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.image-grid img {
+  width: 80px;
+  height: 80px;
+  border: 2px solid black;
+  background-color: white;
+  padding: 2px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.image-grid p {
+  margin: 2px 0 0;
+  font-size: 14px;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  const images = document.querySelectorAll('.image-grid img');
+
+  images.forEach(image => {
+    const randomColor = getRandomColor();
+    image.style.border = `2px solid ${randomColor}`;
+  });
+});
+
+function getRandomColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+</script>
+</body>
+</html>
