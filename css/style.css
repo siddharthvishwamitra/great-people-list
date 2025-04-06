@@ -33,7 +33,7 @@ body {
 
 .card img {
   width: 100%;
-  max-width: 320px;
+  max-width: 500px;
   object-fit: cover;
   border-right: 1px solid #eee;
 }
