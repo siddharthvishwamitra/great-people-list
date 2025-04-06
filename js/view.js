@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
   if ([...params].length === 0) {
     container.innerHTML = `
       <div class="info-box">
-        <h2>No character selected</h2>
-        <p>Use a URL like <code>view.html?bhisma-pitamah</code> to view a character profile.</p>
+        <h2>No person selected!</h2>
+        <p>Use a URL like <code>view.html?bhisma-pitamah</code> to view a person profile.</p>
       </div>
     `;
     return;
