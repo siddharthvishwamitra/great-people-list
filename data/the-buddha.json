@@ -1,0 +1,30 @@
+{
+  "name": "Gautama Buddha",
+  "title": "The Enlightened One",
+  "born": "563 BCE",
+  "died": "483 BCE (approx.)",
+  "birthplace": "Lumbini (present-day Nepal)",
+  "affiliation": "Sanatana Dharma (originally), later founder of Buddhism",
+  "parents": "King Śuddhodana (father), Queen Maya Devi (mother)",
+  "image": "img/buddha.jpg",
+  "notableVows": [
+    "Renounced worldly life in search of truth",
+    "Vowed to sit in meditation until attaining enlightenment",
+    "Dedicated his life to teaching the path of liberation from suffering"
+  ],
+  "weapons": [
+    "Wisdom",
+    "Compassion",
+    "Mindfulness",
+    "Meditation"
+  ],
+  "traits": [
+    "Peaceful",
+    "Wise",
+    "Compassionate",
+    "Self-disciplined",
+    "Detached from ego"
+  ],
+  "bio": "Gautama Buddha, born as Prince Siddhartha, was raised in luxury and shielded from the sufferings of life. Upon encountering sickness, old age, and death, he renounced his royal privileges and became an ascetic in search of the ultimate truth. After years of intense meditation and self-inquiry, he attained enlightenment under the Bodhi tree in Bodh Gaya. Thereafter, he became 'The Buddha' and spent the rest of his life teaching the Four Noble Truths and the Eightfold Path, helping countless beings find peace and liberation.",
+  "lifeSummary": "Gautama Buddha’s journey began as a royal prince who abandoned comfort for spiritual pursuit. Realizing that neither indulgence nor severe austerity led to truth, he found the 'Middle Path'. Enlightened at age 35, he spent over four decades sharing insights on suffering, impermanence, compassion, and liberation. His teachings formed the foundation of Buddhism, a path that emphasizes non-violence, self-awareness, and freedom from desires. Buddha’s life exemplifies self-transformation, inner peace, and the power of compassion in overcoming suffering."
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Confucius",
+  "title": "Kǒng Fūzǐ (Master Kong)",
+  "born": "28 September 551 BCE",
+  "died": "479 BCE",
+  "birthplace": "Qufu, State of Lu (modern-day Shandong, China)",
+  "affiliation": "Confucianism (Ethical-Philosophical System)",
+  "parents": "Kong He (father), Yan Zhengzai (mother)",
+  "image": "img/confucius.jpg",
+  "notableVows": [
+    "Dedicated his life to restoring morality and virtue in governance",
+    "Taught respect, righteousness, and filial piety as pillars of society",
+    "Believed in leading by example rather than force"
+  ],
+  "weapons": [
+    "Wisdom",
+    "Ethics",
+    "Ritual knowledge",
+    "Moral philosophy"
+  ],
+  "traits": [
+    "Wise",
+    "Disciplined",
+    "Respectful",
+    "Humble",
+    "Visionary"
+  ],
+  "bio": "Confucius was a Chinese philosopher and teacher whose thoughts shaped the moral fabric of East Asia for centuries. Born during a time of political instability, he emphasized the importance of personal and governmental morality, correctness of social relationships, justice, and sincerity. He traveled across states offering counsel to rulers and teaching disciples, laying the foundation for what became Confucianism. His sayings and ideas were later compiled into the *Analects*, a core text in Chinese philosophy.",
+  "lifeSummary": "Confucius lived during a time of great unrest and fragmentation in China. Believing that harmony in society began with virtue in individuals and rulers, he taught a structured moral code centered around respect, duty, and righteousness. His teachings emphasized filial piety, loyalty, proper conduct, and education. Though he held minor government roles, most of his life was spent teaching. Over time, his philosophy became deeply embedded in Chinese culture, influencing politics, education, and social ethics for over two millennia. Confucius is honored not just as a philosopher, but as a sage who taught how to live with honor and integrity."
+}
