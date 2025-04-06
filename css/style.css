@@ -1,0 +1,133 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Main container */
+#profile-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Character Card */
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  max-width: 320px;
+  object-fit: cover;
+  border-right: 1px solid #eee;
+}
+
+.card-content {
+  flex: 1;
+  padding: 24px;
+  min-width: 280px;
+}
+
+.card-content h1 {
+  font-size: 32px;
+  color: #4a148c;
+  margin-bottom: 8px;
+}
+
+.card-content h2 {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card-content p {
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.card-content ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.card-content li {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+/* Summary section */
+.summary-box {
+  margin-top: 40px;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.summary-box h2 {
+  font-size: 24px;
+  color: #4a148c;
+  margin-bottom: 12px;
+}
+
+.summary-box p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Info box for fallback */
+.info-box {
+  text-align: center;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 40px;
+}
+
+.info-box h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #d32f2f;
+}
+
+.info-box p {
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .summary-box {
+    padding: 20px;
+  }
+}
