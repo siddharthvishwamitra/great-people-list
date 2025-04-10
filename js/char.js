@@ -40,37 +40,59 @@ function loadCharacters(data) {
       <p>${char.name}</p>
     </a>`
   ).join('');
-  addRandomBorders();
+  addPersistentBorders();
 }
 
-function addRandomBorders() {
+function addPersistentBorders() {
   const images = document.querySelectorAll('.image-grid img');
   images.forEach(image => {
-    const randomColor = getRandomColor();
-    image.style.border = `2px solid ${randomColor}`;
+    const key = 'border-' + image.alt;
+    let color = localStorage.getItem(key);
+    if (!color) {
+      color = getDarkRandomColor();
+      localStorage.setItem(key, color);
+    }
+    image.style.border = `2px solid ${color}`;
   });
 }
 
-function getRandomColor() {
-  const letters = '0123456789ABCDEF';
-  let color = '#';
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
+function getDarkRandomColor() {
+  let r = Math.floor(Math.random() * 156);
+  let g = Math.floor(Math.random() * 156);
+  let b = Math.floor(Math.random() * 156);
+  return `rgb(${r},${g},${b})`;
+}
+
+function showShimmer() {
+  const grid = document.getElementById('character-grid');
+  grid.innerHTML = Array.from({ length: 15 }).map(() => `
+    <div class="shimmer-item">
+      <div class="shimmer-img shimmer-animate"></div>
+      <div class="shimmer-text shimmer-animate"></div>
+    </div>
+  `).join('');
 }
 
 // Main logic
 openDB().then(db => {
+  showShimmer(); // Show shimmer right away
+  const start = Date.now(); // Track start time
+
   getFromCache(db).then(cached => {
     if (cached.length > 0) {
-      loadCharacters(cached);
+      const elapsed = Date.now() - start;
+      const delay = Math.max(1000 - elapsed, 0);
+      setTimeout(() => loadCharacters(cached), delay);
     } else {
       fetch('/js/char.json')
         .then(res => res.json())
         .then(data => {
-          loadCharacters(data);
-          saveToCache(db, data);
+          const elapsed = Date.now() - start;
+          const delay = Math.max(1000 - elapsed, 0);
+          setTimeout(() => {
+            loadCharacters(data);
+            saveToCache(db, data);
+          }, delay);
         });
     }
   });
