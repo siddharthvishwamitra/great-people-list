@@ -1,0 +1,17 @@
+[
+  { "name": "Lord Buddha", "slug": "the-buddha", "img": "img/buddha.jpg" },
+  { "name": "Vishwamitra", "slug": "vishwamitra", "img": "img/vishwamitra.jpg" },
+  { "name": "Bhisma", "slug": "bhisma-pitamah", "img": "img/bhisma.jpg" },
+  { "name": "Confucius", "slug": "confucius", "img": "img/confucius.jpg" },
+  { "name": "Rumi", "slug": "rumi", "img": "img/rumi.jpg" },
+  { "name": "Hanuman", "slug": "hanuman", "img": "img/hanuman.jpg" },
+  { "name": "Veda Vyasa", "slug": "ved-vyasa", "img": "img/ved-vyasa.jpg" },
+  { "name": "Vivekananda", "slug": "vivekananda", "img": "img/vivekananda.jpg" },
+  { "name": "Lord Krishna", "slug": "krishna", "img": "img/krishna.jpg" },
+  { "name": "Guru Nanak", "slug": "guru-nanak", "img": "img/guru-nanak.jpg" },
+  { "name": "Shankaracharya", "slug": "shankaracharya", "img": "img/shankaracharya.jpg" },
+  { "name": "Lord Rama", "slug": "lord-rama", "img": "img/rama.jpg" },
+  { "name": "Chanakya", "slug": "chanakya", "img": "img/chanakya.jpg" },
+  { "name": "Jesus", "slug": "jesus", "img": "img/jesus.jpg" },
+  { "name": "Great Ashoka", "slug": "ashoka", "img": "img/ashoka.jpg" }
+]
