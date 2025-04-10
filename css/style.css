@@ -32,6 +32,7 @@ body {
 }
 
 .card img {
+  min-height: 100px;
   width: 100%;
   max-width: 500px;
   object-fit: cover;
