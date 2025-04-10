@@ -66,7 +66,7 @@ openDB().then(db => {
     if (cached.length > 0) {
       loadCharacters(cached);
     } else {
-      fetch('characters.json')
+      fetch('/js/char.json')
         .then(res => res.json())
         .then(data => {
           loadCharacters(data);
